@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etalase Produk — Week 6</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Navigasi Halaman dengan aria-current -->
+        <nav class="nav-links">
+            <a href="index.html" aria-current="page" class="active">Etalase Produk</a>
+            <a href="form.html">Generator Caption</a>
+        </nav>
+
+        <header>
+            <h1>Etalase Produk</h1>
+            <p>Katalog produk yang datanya diambil dari <code>dummyjson.com/products</code></p>
+        </header>
+
+        <!-- Filter & Pencarian -->
+        <div class="filter-section">
+            <input type="text" id="searchInput" placeholder="Cari produk berdasarkan nama...">
+            <select id="categorySelect">
+                <option value="">Semua Kategori</option>
+            </select>
+        </div>
+
+        <!-- Status Loading & Error -->
+        <div id="loading" class="loading">Memuat data produk...</div>
+        <div id="errorBox" class="error-msg hidden"></div>
+
+        <!-- Grid Produk -->
+        <div id="productGrid" class="product-grid"></div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
